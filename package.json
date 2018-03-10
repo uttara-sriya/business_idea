@@ -1,0 +1,19 @@
+{
+  "name": "business",
+  "version": "1.0.0",
+  "description": "Assortment of business ideas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sriya",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^1.7.2",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.8",
+    "nodemon": "^1.17.1"
+  }
+}
