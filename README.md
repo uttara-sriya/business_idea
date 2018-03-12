@@ -19,8 +19,8 @@ MEAN Stack: MongoDB, Express, Angular and Node
 
 1. Clone/Download the repository
 2. Run 'npm install' command in the root 
-3. Run 'npm install' command under the views folder
-4. Deploy the view folder using 'ng serve' command which opens to localhost:4200 in the browser
+3. Run 'npm install' command under the client folder
+4. Deploy the client folder using 'ng serve' command which opens to localhost:4200 in the browser
 6. Install MongoDB and run mongo server
 5. Deploy the root folder using 'node app.js' command which deploys to localhost:3000 
 

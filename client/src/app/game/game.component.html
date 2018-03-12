@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <form class="form-inline my-2 my-lg-0">
+        <input  [(ngModel)]="game_title" [ngModelOptions]="{standalone: true}" class="form-control mr-sm-2" type="text" placeholder="Search">
+        <div class="title"><h3>Business Ideas</h3></div>
+    </form>
+</nav>
+<div class="gobackHome">
+    <span class="badge badge-warning"><h6> <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">HOME</a></h6></span>
+    <span class="badge badge-success"><h6> <a routerLink="/game" routerLinkActive="active">#Game</a></h6></span>
+</div>  
+<div class="jumbo">
+<div class="jumbotron" *ngFor = "let game of allGames | filter : game_title">
+    <img src="{{game.game_img}}" alt="NoIMG">
+    <h1 class="display-3">{{game.game_title}}</h1>
+    <p class="lead">{{game.game_content}}</p> 
+  </div>
+</div>
+<div class="bs-docs-section">
+  <div class="row center"  >
+     
+  </div> 
+</div>
+
+
+
+  
