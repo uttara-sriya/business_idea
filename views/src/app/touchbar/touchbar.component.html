@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <form class="form-inline my-2 my-lg-0">
+        <input  [(ngModel)]="touchbar_title" [ngModelOptions]="{standalone: true}" class="form-control mr-sm-2" type="text" placeholder="Search">
+        <div class="title"><h3>Business Ideas</h3></div>
+    </form>
+</nav>
+<div class="gobackHome">
+    <span class="badge badge-warning"><h6> <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">HOME</a></h6></span>
+    <span class="badge badge-success"><h6> <a routerLink="/touchbar" routerLinkActive="active">#Touchbar</a></h6></span>
+</div>  
+<div class="jumbo">
+<div class="jumbotron" *ngFor = "let touchbar of touchbars |filter: touchbar_title">
+    <img src="{{touchbar.touchbar_img}}" alt="NoIMG">
+    <h1 class="display-3">{{touchbar.touchbar_title}}</h1>
+    <p class="lead">{{touchbar.touchbar_content}}</p> 
+  </div>
+</div>
+<div class="bs-docs-section">
+  <div class="row center"  >
+     
+  </div> 
+</div>
+

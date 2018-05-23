@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <form class="form-inline my-2 my-lg-0">
+        <input  [(ngModel)]="ai_title" [ngModelOptions]="{standalone: true}"  class="form-control mr-sm-2" type="text" placeholder="Search">
+        <div class="title"><h3>Business Ideas</h3></div>
+    </form>
+</nav>
+<div class="gobackHome">
+    <span class="badge badge-warning"><h6> <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">HOME</a></h6></span>
+    <span class="badge badge-success"><h6> <a routerLink="/ai" routerLinkActive="active">#Artificial IntelligenceI</a></h6></span>
+</div>  
+<div class="jumbo">
+<div class="jumbotron" *ngFor = "let ai of ais | filter : ai_title">
+    <img src="{{ai.ai_img}}" alt="NoIMG">
+    <h1 class="display-3">{{ai.ai_title}}</h1>
+    <p class="lead">{{ai.ai_content}}</p>
+  </div>
+</div>
+<div class="bs-docs-section">
+  <div class="row center"  >
+     
+  </div> 
+</div>
+
+
+  
